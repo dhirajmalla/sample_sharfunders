@@ -1,0 +1,16 @@
+<div class="main_container text-center">
+    <div class="login_form_container">
+        <img class="company_logo" src="../assets/img/logo_open-sans.png">
+        <h2>Verification</h2>
+        <form class="login_form" ng-submit="verifyUser()" >
+            <div class="form_image_header_container">
+                <img src="../assets/img/sign_up_icon.svg">
+            </div>
+                <input type="text"  class="form-control" ng-model="verification_signup" required
+                       placeholder="verification code">
+            <input type="submit" id="verify-login" class="form-control" value="Verify">
+            <p> <span class="error">{{error_msg}}</span></p>
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,30 @@
+<div class="main_container text-center">
+
+    <div class="login_form_container">
+        <img class="company_logo" src="../assets/img/logo_open-sans.png">
+        <h2>Sign Up</h2>
+        <form class="login_form" ng-submit="createUser()" >
+            <div class="form_image_header_container">
+                <img src="../assets/img/sign_up_icon.svg">
+            </div>
+            <!--<input type="button" id="btn-linkedin_signup" ng-click="authenticate('linkedin')"
+            class="form-control">-->
+            <input type="email" id="user_email" value="" ng-blur="validateEmailAddress()" class="form-control"
+                   ng-model="user_email"
+                   required
+                   placeholder="Email">
+            <input type="text" value="" class="form-control" ng-model="user_name" required
+                   placeholder="First name">
+            <input type="text" value="" class="form-control" ng-model="user_last_name" required
+                   placeholder="Last name">
+            <input type="text" value="" class="form-control"  ng-model="user_country" required
+                   placeholder="Country">
+            <input type="submit" id="submit-login" class="form-control" value="Sign Up">
+            <p>By signing up, you agree to our <a href="">Terms and Conditions</a> and our  <a href="">Cookies and
+                Privacy Policy</a></p>
+            <!--<p>By clicking, I accept the <a href=""> terms of Service</a><br>Your <a href=""> privacy</a> is
+                protected</p>-->
+        </form>
+    </div>
+    <p>Already have a user? <a href="#/login"> Log in here</a></p>
+</div>

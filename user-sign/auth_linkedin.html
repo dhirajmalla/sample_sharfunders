@@ -1,0 +1,26 @@
+<html>
+<head>
+    <script type="text/javascript" >
+        var callbackResponse = (document.URL).split("#")[1];
+        var responseParameters = (callbackResponse).split("&");
+        var parameterMap = [];
+        for(var i = 0; i < responseParameters.length; i++) {
+            parameterMap[responseParameters[i].split("=")[0]] = responseParameters[i].split("=")[1];
+        }
+        if(parameterMap.access_token !== undefined && parameterMap.access_token !== null) {
+            var linkedin = {
+                oauth: {
+                    access_token: parameterMap.access_token,
+                    expires_in: parameterMap.expires_in,
+                    account_username: parameterMap.account_username
+                }
+            };
+            window.localStorage.setItem("linkedin_key", JSON.stringify(linkedin));
+            window.location.href = "http://localhost:8080/index.html#/secure";
+        } else {
+            alert("Problem authenticating");
+        }
+    </script>
+</head>
+<body>Redirecting...</body>
+</html>

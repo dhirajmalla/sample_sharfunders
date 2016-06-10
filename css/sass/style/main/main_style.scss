@@ -1,0 +1,57 @@
+.secColor{
+	color:$textGrey
+}
+.sizeLarge{
+	font-size:20px;
+}
+.sizeMedium{
+	font-size:16px;
+}
+.sizesmall{
+	font-size:14px;
+}
+.sizeLargeSemiBold{
+	font-size:20px;
+	font-family:"ProximaNovaCond-Semibold"
+}
+.sizeMediumSemiBold{
+	font-size:16px;
+	font-family:"ProximaNovaCond-Semibold"
+}
+.sizeSmallSemiBold{
+	font-size:14px;
+	font-family:"ProximaNovaCond-Semibold"
+}
+
+p {
+	padding-top:.5em;
+}
+
+// To all basic ul
+ul{
+	li{
+		display: inline-block;
+		list-style: none;
+		vertical-align: middle;
+	}
+}
+
+
+.investor_Relation{
+	margin-top:50px;
+	& .row{
+		padding-left:10px; 
+		padding-right:10px; 
+	}
+}
+ 
+@media (max-width: $maxScreenWidth) {
+
+  	.col-md-12.text-right, .col-md-12.text-left {
+          text-align: center;
+   	}
+}
+
+.content{
+	background-color:$backGroundColor;
+}

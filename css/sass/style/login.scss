@@ -1,0 +1,94 @@
+
+body, html{
+  background-color: $body_background_color;
+}
+
+.main_container {
+  margin: 50px auto 0;
+
+  .company_logo{
+    width: 100%;
+    height: auto;
+
+  }
+  h1, h3 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 36px;
+    padding: 2px;
+    margin: 18px 0px;
+  }
+
+  p {
+    padding-top: 1em;
+  }
+
+
+  form {
+
+    input[type='submit'],input[type='button']{
+      background-color: $buttonColor;
+      width: 100%;
+      height: 36px;
+      color: white;
+      font-size: 14px;
+      box-shadow: none;
+      text-shadow: none;
+      text-transform: uppercase;
+      border:none;
+    }
+    input[type='button']{
+      background: url('../assets/img/linkedin_signup.png') no-repeat;
+      background-size:100% ;
+    }
+
+  }
+}
+
+.login_form_container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.login_form {
+  background-color:$backGroundColor;
+  border: 1px solid $btn_gray_color;
+  padding: 2em 3em 1em;
+}
+
+.form_image_header_container {
+  width: 100%;
+  position: relative;
+  img {
+    margin: 0 auto;
+    margin-bottom: 2em;
+    position: relative;
+    display: block;
+    width: 75px;
+    height: 75px;
+
+  }
+}
+.error {
+  color: red;
+}
+input[type=text]:focus, input.text:focus, input.title:focus, textarea:focus, select:focus{
+  border-color: transparent;
+}
+
+input, textarea {
+  @include get_animation(all, 0.4s, ease);
+  outline: none;
+  border: 1px solid transparent;
+  margin-top: 1em;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba($buttonColor, 1);
+  border: 1px solid rgba($buttonColor, 1);
+}

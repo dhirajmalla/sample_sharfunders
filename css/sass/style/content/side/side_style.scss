@@ -1,0 +1,175 @@
+.content {
+	.content_side {
+		& .row {
+			div {
+				background-color: white;
+			}
+		 	.shares_round {
+				padding: 0;
+			}
+			table.shares_round {
+				width: 100%;
+				height: 50px;
+				background-color: black;
+				td {
+					color: white;
+					text-align: left;
+					padding-left:0.5em;
+					padding-right:0.5em;
+				}
+				td.align-right {
+					text-align: right;
+				}
+			}
+
+			.shares_offering {
+				padding: 0;
+				& table { // @todo this is wrong, it should be table &.shares_round to export it properly.
+					width: 100%;
+					border: 1px solid $borderColor;
+					border-top: none;
+					thead {
+						border-width:1px;
+						border-style:solid;
+						border-color:black ;
+						background-color: black;
+						color: white;
+					}
+
+					td {
+						padding: 0.5em 1em 0.5em 1em;
+						text-align: left;
+						border: none;
+					}
+					td{
+						&.align-right {
+							text-align: right;
+						}
+
+						&.align-center {
+							text-align: center;
+						}
+					}
+
+					button {
+						border-radius: 0;
+						width: 80%;
+						color: white;
+					}
+					.btn-invest {
+						background-color: $buttonColorInvest;
+					}
+					.btn-follow {
+						background-color: $buttonColorFollow;
+					}
+				}
+
+				.offering-percent-back {
+					background-color: $backGroundColorProgress;
+					margin-top: 10px;
+				}
+				#offeringPercentFront {
+					background-color: $forgroundColorProgress;
+					padding: 0;
+				}
+
+			}
+
+			.shares_follow {
+				border: 1px solid $borderColor;
+				//padding:15px;
+				height: 80px;
+				display: table;
+				width: 100%;
+				.row{
+					border-right: 1px solid $borderColor;
+				}
+				.center-child-div {
+					@include centerChildDiv;
+					button {
+						width: 80%;
+						background-color: $buttonColor;
+						color: white;
+					}
+					.btn-login {
+						background-color: $textGrey;
+					}
+				}
+			}
+			.company_sharePrice {
+				height: 300px;
+				border: 1px solid $borderColor;
+				margin-top: 5px;
+				padding-bottom: 5px;
+				.company_sharePrice_chart {
+					height: 80%;
+					width: 100%;
+					.chartClass {
+						height: 100%;
+						width: 100%;
+						padding-bottom: 10px;
+						svg {
+							width: 100%
+						}
+					}
+
+				}
+			}
+			.company_valuation {
+				border: 1px solid $borderColor;
+				margin-top: 5px;
+				padding-left: 15px;
+			}
+			.company_rewards {
+				border: 1px solid $borderColor;
+				margin-top: 5px;
+				padding-left: 15px;
+				& .reward-text {
+					padding-left: 2em;
+					padding-right: 2em;
+				}
+			}
+
+			.company_legalDoc {
+				border: 1px solid $borderColor;
+				margin-top: 5px;
+				& ul{
+					padding:0.5em;
+					li {
+						display: table;
+					}
+				}
+
+			}
+			.company_financialDoc {
+				border: 1px solid $borderColor;
+				margin-top: 5px;
+				& ul{
+					padding:0.5em;
+					li {
+						display: table;
+					}
+				}
+
+			}
+
+		}
+	}
+}
+
+.content_side {
+	margin-top: -50px;
+}
+.offering-div{
+	& .content_side{
+		margin-top: -70px;
+	}
+}
+
+@media (max-width: $maxScreenWidth) {
+	.content_side {
+		margin-top: 0;
+	}
+
+}
+

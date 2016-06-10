@@ -1,0 +1,91 @@
+.header {
+	position: relative;
+}
+
+.header_info img {
+	width: 100%;
+}
+
+.company-logo {
+	//width: 120px;
+	//height: auto;
+	//position: relative;
+	img {
+		width: 84px;
+		height: 114px;
+		padding-right: .2em;
+	}
+}
+
+.header_sociallink {
+	position: absolute;
+	display: inline-block;
+	bottom: 0;
+	padding-right: 0;
+	padding-bottom: 55px;
+	padding-left: 0;
+	& ul li {
+		padding-left:.5em;
+	}
+}
+
+.offering-div{
+	.header_sociallink{
+		padding-bottom: 75px;
+	}
+}
+
+
+.rewards {
+	& .header_info {
+		//position: relative;
+		width: 100%;
+		height: 632px;
+		overflow: hidden;
+	}
+}
+
+@media (max-width: $maxScreenWidth) {
+	.header {
+		position: static;
+	}
+	.header_sociallink {
+		position: static;
+		display: block;;
+		padding-top: .5em;
+		padding-bottom: .5em;
+		& ul {
+			padding-left:0em;
+			float: none;
+			margin: 0 auto;
+		}
+	}
+
+}
+
+.company-name{
+	padding-left: 0.3em;
+}
+.fitDiv {
+	display: inline-block;
+	text-align: center;
+	padding-left:.5em;
+	padding-right: .5em;
+}
+
+.fitDiv-followers {
+	border-right: 1px solid $textGrey;
+}
+
+@media (max-width: $maxScreenWidth) {
+	.fitDiv {
+		display: block;
+		border: none;
+	}
+	.rewards {
+		& .header_info {
+			height: 300px;
+		}
+	}
+
+}

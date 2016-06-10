@@ -1,0 +1,52 @@
+<!Doctype html>
+<html id="sharefunders" lang="en" ng-app="UserSignApp">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!--<base href="">-->
+    <meta charset="UTF-8"/>
+
+    <title>Sharefunders - User Sign In/Up</title>
+    <!--STYLES-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../bower_components/morrisjs/morris.css" />-->
+    <link rel="stylesheet" href="../bower_components/toastr/toastr.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css"/>
+    <!-- End of Styles -->
+
+
+    <!--JAVASCRIPT-->
+    <script type="text/javascript" src="../bower_components/cookies-js/dist/cookies.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-spinners/dist/angular-spinners.min.js"></script>
+    <script type="text/javascript" src="../bower_components/satellizer/satellizer.min.js"></script>
+    <script type="text/javascript" src="../bower_components/toastr/toastr.min.js"></script>
+
+    <script type="text/javascript" src="../js/user-sign/app.js"></script>
+    <script type="text/javascript" src="../js/user-sign/UserLoginController.js"></script>
+    <script type="text/javascript" src="../js/user-sign/UserSignUpController.js"></script>
+    <script type="text/javascript" src="../js/user-sign/VerificationSignUpController.js"></script>
+    <script type="text/javascript" src="../js/user-sign/PasswordSignUpController.js"></script>
+    <script type="text/javascript" src="../js/user-sign/RequestPasswordController.js"></script>
+    <script type="text/javascript" src="../js/user-sign/RequestPasswordVerifyController.js"></script>
+
+    <!--End of JAVASCRIPT-->
+</head>
+
+<body>
+<input type="hidden" value="2" id="mainCompanyIdentification" >
+<spinner name="loadingSpinner">
+    <div class="loader_container">
+        <div class="loader">Loading...</div>
+    </div>
+</spinner>
+<div ng-view>
+</div>
+</body>
+</html>
+

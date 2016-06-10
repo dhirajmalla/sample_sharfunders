@@ -1,0 +1,22 @@
+<div class="main_container text-center">
+
+    <div class="login_form_container">
+        <img class="company_logo" src="../assets/img/logo_open-sans.png">
+        <h2>Sign in</h2>
+        <form class="login_form" ng-submit="checkUser()" >
+            <div class="form_image_header_container">
+                <img src="../assets/img/sign_up_icon.svg">
+            </div>
+            <!--<input type="button" ng-click="authenticate('linkedin')" value="">-->
+            <input type="email" value="" class="form-control" ng-model="email" required
+                   placeholder="email">
+            <input type="password" value='' class="form-control"  ng-model="password" required
+                   placeholder="password">
+            <input type="submit" id="submit-login" class="form-control" value="Sign in">
+            <p><a href="#request_password"> Forgot password?</a></p>
+            <p> <span class="error">{{error_msg}}</span></p>
+        </form>
+    </div>
+    <!--@todo why is this part hard coded-->
+    <p>Not a sharefunders user? <a href="#/signup"> Sign up here</a></p>
+</div>
